@@ -1,0 +1,27 @@
+{
+  "name": "Priscilla Abrego",
+  "title": "Manager, Global Accounts",
+  "email": "pabrego@HelmsBriscoe.com",
+  "phone": "956-212-4771",
+  "address": {
+    "street": "4513 Stony Creek Drive",
+    "city": "Corpus Christi",
+    "state": "TX",
+    "zip": "78413",
+    "country": "USA"
+  },
+  "company": "HelmsBriscoe",
+  "companyNote": "An independent licensee of HelmsBriscoe",
+  "image": "https://placehold.co/200x200",
+  "languages": ["English", "Spanish"],
+  "bio": {
+    "English": {
+      "intro": "Based out of Corpus Christi, Texas, Priscilla Abrego recently joined HelmsBriscoe and brings great enthusiasm and confidence to her team...",
+      "background": "Priscilla attended Texas A&M University where she received a Bachelor of Science Degree in Management and Marketing..."
+    },
+    "Spanish": {
+      "intro": "Basada en Corpus Christi, Texas, Priscilla Abrego se unió recientemente a HelmsBriscoe...",
+      "background": "Priscilla asistió a la Universidad Texas A&M donde recibió una Licenciatura en Ciencias..."
+    }
+  }
+}

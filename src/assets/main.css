@@ -1,0 +1,13 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f8f9fa;
+}
+
+a.nav-link {
+  margin-right: 1rem;
+  color: #333;
+}
+
+a.nav-link:hover {
+  text-decoration: underline;
+}
