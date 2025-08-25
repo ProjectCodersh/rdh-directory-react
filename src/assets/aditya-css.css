@@ -1,0 +1,228 @@
+/* ======= Why RV UNIQ css ======= */
+/* Section Title */
+.section-title {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;
+  font-weight: 500;
+  color: #444;
+  font-size: 2.625rem;
+  line-height: 1.2;
+}
+
+/* underline */
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: var(--primary, #0d6efd);
+  border-radius: 2px;
+}
+
+/* Texts */
+.why-unique h4 {
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 1.25rem;
+  font-size: 1.25rem;
+}
+
+.why-unique p {
+  font-size: 17px;
+  line-height: 1.65;
+  color: #444;
+}
+
+/* Container */
+.custom_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Images */
+.img-fluid {
+  max-height: 320px;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 991px) {
+  .section-title {
+    font-size: 2.2rem;
+  }
+  .img-fluid {
+    max-height: 280px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  .why-unique h4 {
+    font-size: 1.25rem;
+  }
+  .why-unique p {
+    font-size: 0.95rem;
+  }
+  .row {
+    flex-direction: column !important; /* stack text and image */
+    text-align: left;
+  }
+  .col-md-6 {
+    margin-bottom: 1.5rem;
+  }
+  .img-fluid {
+    max-height: 240px;
+  }
+}
+
+/* ======= CTA Section css ======= */
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(to right, #6a8bbb, #3a6eb4, #1056ae);
+  color: white;
+  padding: 3rem 1rem;
+}
+
+.cta-title {
+  font-size: 2.25rem; /* ~36px */
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+.cta-btn {
+  background: #fff;
+  color: #2a65b2;
+  padding: 0.6rem 1.6rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-size: 1.25rem;
+  white-space: nowrap; /* prevents text wrapping */
+}
+
+.cta-btn:hover {
+  background: #f1f1f1;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .cta-title {
+    font-size: 1.8rem; /* slightly smaller for tablets */
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .cta-btn {
+    font-size: 1.0625rem;
+    padding: 0.5rem 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-title {
+    font-size: 1.5rem; /* smaller on phones */
+  }
+
+  .cta-btn {
+    width: 100%; /* full-width button on mobile */
+    max-width: 320px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+/* ======= Footer ======= */
+.footer {
+  padding: 3rem 1rem 2rem;
+  color: #444;
+  font-size: 16px;
+}
+
+.footer h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.footer-custom-p {
+  /* font-size: 1.25rem; */
+  font-size: 1.1875rem;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: #444;
+  transition: 0.3s;
+}
+
+.footer ul li a:hover {
+  color: #2563eb;
+}
+
+/* Logo */
+.footer-brand .logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2a65b2;
+  margin-bottom: 1rem;
+}
+
+.footer-brand span {
+  color: #2d5fa1;
+  font-size: 1.25rem;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  margin: 0 5px 0 0;
+  border: 3px solid #2a65b2;
+  border-radius: 50%;
+  color: #2a65b2;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background: #2a65b2;
+  color: #fff;
+}
+
+/* Bottom */
+.footer-bottom {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 480px) {
+  .social-icons a {
+    width: 36px;
+    height: 36px;
+  }
+}

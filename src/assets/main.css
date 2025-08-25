@@ -1,7 +1,32 @@
-body {
-  font-family: "Segoe UI", sans-serif;
-  background-color: #f8f9fa;
+/* 1. Root Variables (universal colors, fonts, spacing) */
+:root {
+  /* Colors */
+  --primary: #0d6efd; /* Bootstrap primary */
+  --secondary: #6c757d;
+  --accent: #ff6f61;
+  --dark: #212529;
+  --light: #f8f9fa;
+
+  /* Typography */
+  --font-heading: "Poppins", "Montserrat", system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --color-text: #333;
 }
+
+/* 2. Global Reset (normalize things) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 3. Apply root styles */
+body {
+  font-family: var(--font-heading);
+}
+
+/* 4. Navbar styles */
 
 a.nav-link {
   margin-right: 1rem;
