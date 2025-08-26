@@ -1,6 +1,7 @@
 import React from "react";
 import parse from "html-react-parser"; // npm install html-react-parser
 import "../../assets/dhruvin-css.css";
+import "../../assets/aditya-css.css";
 
 const data = [
   {
@@ -27,12 +28,13 @@ const data = [
 function HowItWorksCard({ iconClassname, title, para }) {
   return (
     <div className="col-lg-4 col-md-6 col-12">
-      <div className="how-card text-center p-4 h-100">
+      <div className="how-card text-center p-3 h-100">
         <i
-          className={`${iconClassname} mb-3`}
-          style={{ fontSize: "2rem", color: "#2a65b2" }}
+          className={`${iconClassname} how-icon mb-4`}
+          style={{ color: "#3873cd" }}
+          aria-hidden="true"
         ></i>
-        <h5 className="mb-3">{parse(title)}</h5>
+        <h4 className="mb-4">{parse(title)}</h4>
         <p>{para}</p>
       </div>
     </div>
@@ -41,9 +43,9 @@ function HowItWorksCard({ iconClassname, title, para }) {
 
 function HowItWorks() {
   return (
-    <section className="how-it-works-section py-5">
+    <section className="how-it-works py-5">
       <div className="custom_container">
-        <div className="text-center mb-5">
+        <div className="text-center mb-2">
           <h2 className="section-title">How it Works</h2>
         </div>
         <div className="row g-4">

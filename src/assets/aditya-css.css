@@ -24,28 +24,13 @@
 }
 
 /* Texts */
-.why-unique h4 {
-  font-weight: 500;
-  color: #444;
-  margin-bottom: 1.25rem;
-  font-size: 1.25rem;
-}
-
+.why-unique h4,
 .why-unique p {
-  font-size: 17px;
-  line-height: 1.65;
   color: #444;
-}
-
-/* Container */
-.custom_container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
 }
 
 /* Images */
-.img-fluid {
+.why-unique .img-fluid {
   max-height: 320px;
   object-fit: cover;
   width: 100%;
@@ -56,9 +41,9 @@
 /* 🔹 Responsive Design */
 @media (max-width: 991px) {
   .section-title {
-    font-size: 2.2rem;
+    font-size: 2.25rem;
   }
-  .img-fluid {
+  .why-unique .img-fluid {
     max-height: 280px;
   }
 }
@@ -67,12 +52,6 @@
   .section-title {
     font-size: 2rem;
   }
-  .why-unique h4 {
-    font-size: 1.25rem;
-  }
-  .why-unique p {
-    font-size: 0.95rem;
-  }
   .row {
     flex-direction: column !important; /* stack text and image */
     text-align: left;
@@ -80,7 +59,7 @@
   .col-md-6 {
     margin-bottom: 1.5rem;
   }
-  .img-fluid {
+  .why-unique .img-fluid {
     max-height: 240px;
   }
 }
@@ -95,8 +74,8 @@
 
 .cta-title {
   font-size: 2.25rem; /* ~36px */
-  font-weight: bold;
   line-height: 1.3;
+  font-weight: bold;
 }
 
 .cta-btn {
@@ -129,20 +108,14 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .cta-title {
     font-size: 1.5rem; /* smaller on phones */
-  }
-
-  .cta-btn {
-    width: 100%; /* full-width button on mobile */
-    max-width: 320px;
-    margin: 0 auto;
-    display: block;
   }
 }
 
 /* ======= Footer ======= */
+/* upper footer css*/
 .footer {
   padding: 3rem 1rem 2rem;
   color: #444;
@@ -150,18 +123,16 @@
 }
 
 .footer h4 {
-  font-size: 1.25rem;
-  font-weight: 500;
-  color: #555;
   margin-bottom: 1rem;
+  color: #555;
 }
 
 .footer-custom-p {
   /* font-size: 1.25rem; */
   font-size: 1.1875rem;
   font-weight: 500;
-  color: #555;
   margin-bottom: 0.5rem;
+  color: #555;
 }
 
 .footer ul li {
@@ -178,7 +149,7 @@
   color: #2563eb;
 }
 
-/* Logo */
+/* footer Logo css */
 .footer-brand .logo {
   font-size: 2.5rem;
   font-weight: 700;
@@ -210,19 +181,150 @@
   color: #fff;
 }
 
-/* Bottom */
-.footer-bottom {
-  margin-top: 2rem;
-  padding-top: 1rem;
-  font-size: 1.125rem;
-  font-weight: 500;
-  color: #555;
-  margin-bottom: 0.5rem;
-}
-
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .social-icons a {
     width: 36px;
     height: 36px;
+  }
+}
+
+/* Bottom footer css*/
+.footer-bottom {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-bottom p {
+  font-size: 1.125rem;
+  margin-bottom: none;
+  font-weight: 500;
+  color: #555;
+}
+
+/* ======= HowItWorks Section Css ======= */
+.how-it-works h2 {
+  color: #333;
+}
+.how-it-works h4,
+.how-it-works p {
+  color: #444;
+}
+
+.how-it-works .section-title::after {
+  background-color: #6b789e;
+}
+
+.how-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.how-icon {
+  width: clamp(50px, 6vw, 70px);
+  height: clamp(50px, 6vw, 70px);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  border-radius: 50%;
+  border: 1px solid #e8ecf3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 24px rgba(23, 43, 77, 0.12),
+    0 2px 6px rgba(23, 43, 77, 0.06);
+}
+
+/* ======= Design-Consirge Css =======  */
+.design-concierge {
+  background: #bddeff;
+  padding: 4rem 0px;
+}
+
+.kicker {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.2;
+}
+
+.kicker span {
+  color: #3988ee;
+}
+
+.subtitle {
+  color: #3e4854;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+/* design-concierge CTA Button */
+.design-concierge .cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ec8f2d;
+  color: #fff;
+  border-radius: 28px;
+  padding: 0.9rem 2rem;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.design-concierge .cta-btn:hover {
+  background: #e08e3e;
+}
+
+/* Illustration placeholder - currently random */
+.illustration {
+  width: 100%;
+  height: 250px;
+  background: url("../../assets/design-concierge-illustration.png") no-repeat
+    center/contain;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 992px) {
+  .kicker {
+    font-size: 2.4rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+.illustration {
+  height: 180px;
+}
+
+@media (max-width: 768px) {
+  .kicker {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.0625rem;
+  }
+  .design-concierge {
+    padding: 3rem 0px;
+  }
+  .design-concierge .cta-btn {
+    padding: 0.7rem 1.56rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .kicker {
+    font-size: 1.625rem;
+  }
+
+  .illustration {
+    height: 180px;
+  }
+
+  .design-concierge .cta-btn {
+    padding: 0.5rem 1.1rem;
   }
 }

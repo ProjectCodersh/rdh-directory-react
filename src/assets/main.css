@@ -26,8 +26,34 @@ body {
   font-family: var(--font-heading);
 }
 
-/* 4. Navbar styles */
+h4 {
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+  font-size: 1.25rem;
+}
 
+p {
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+@media (max-width: 767px) {
+  h4 {
+    font-size: 1.25rem;
+  }
+  p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Container */
+.custom_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* 4. Navbar styles */
 a.nav-link {
   margin-right: 1rem;
   color: #333;

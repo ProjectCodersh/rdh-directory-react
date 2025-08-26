@@ -1,34 +1,33 @@
 import React from "react";
 import "../../assets/dhruvin-css.css";
+
 function DesignConcierge() {
   return (
-    <section className="hero-design-concierge py-5">
+    <section className="design-concierge">
       <div className="custom_container">
         <div className="row align-items-center">
           {/* Left Content */}
-          <div className="col-lg-8 order-2 order-lg-1">
-            <h1 className="hero-kicker">
+          <div className="col-lg-6 order-2 order-lg-1">
+            <h2 className="kicker mb-3">
               <span>Design Concierge</span> made
-            </h1>
-            <h1 className="hero-title mb-3">to simplify your life</h1>
-
-            <p className="hero-subtitle mt-4">
+            </h2>
+            <h2 className="kicker mb-4">to simplify your life</h2>
+            <p className="subtitle mb-4">
               Save valuable time and money by hiring a Design Concierge today.
             </p>
+            <p className="subtitle">Starting at $49/month</p>
 
-            <p className="hero-price mt-3">Starting at $49/month</p>
-
-            <a href="#learn-more" className="btn btn-cta mt-4">
+            <a href="#learn-more" className="cta-btn mt-3">
               Learn More
             </a>
           </div>
 
-          {/* Right Image / Illustration */}
-          <div className="col-lg-4 order-1 order-lg-2 text-center text-lg-end">
-            <div className="hero-illustration" aria-hidden="true">
-              {/* Example: Place your image here */}
-              {/* <img src="/images/design-concierge.png" alt="Design Concierge" className="img-fluid" /> */}
-            </div>
+          {/* Right Illustration */}
+          <div className="col-lg-6 order-1 order-lg-2 text-center text-lg-end">
+            <div
+              className="illustration d-none d-lg-block"
+              aria-hidden="true"
+            ></div>
           </div>
         </div>
       </div>
