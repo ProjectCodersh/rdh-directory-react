@@ -1,5 +1,5 @@
 import React from "react";
-import "../../assets/dhruvin-css.css";
+import "../../assets/aditya-css.css";
 
 function DesignConcierge() {
   return (

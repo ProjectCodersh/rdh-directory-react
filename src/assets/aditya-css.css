@@ -328,3 +328,69 @@
     padding: 0.5rem 1.1rem;
   }
 }
+
+/* ======= FindPerfectStore Section Css ======= */
+.findperfectstore .section-title {
+  position: relative;
+  display: inline-block;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.findperfectstore .section-title::after {
+  left: 0%;
+  transform: translateX(0%);
+  width: 70px;
+  background-color: #6b789e;
+}
+
+.findperfectstore p {
+  color: #444;
+}
+
+.tagline {
+  font-weight: 500;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+/* Gradient Button */
+.btn-blue {
+  display: inline-block;
+  padding: 1rem 3rem !important;
+  background: linear-gradient(to right, #567fb8, #3d70b5, #2562b1);
+  color: #fff !important;
+  font-weight: 600;
+  border-radius: 100px !important;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 20px !important;
+}
+
+.btn-blue:hover {
+  opacity: 0.9;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .findperfectstore .section-title {
+    font-size: 2.25rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .findperfectstore .section-title {
+    font-size: 2rem !important;
+  }
+  .btn-blue {
+    padding: 1rem 2rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn-blue {
+    padding: 0.6rem 1rem !important;
+    font-size: 1.0625rem !important;
+  }
+}
