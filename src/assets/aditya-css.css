@@ -474,3 +474,61 @@
     min-height: 120px;
   }
 }
+
+/* ======= NewArticles Section Css ======= */
+/* Tag styling */
+.tag {
+  font-size: 14px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  border: 1px solid;
+}
+
+.tag-yellow {
+  color: #c9aa00;
+  border-color: #f5e663;
+  /* background-color: #fffbe6; */
+}
+
+.tag-green {
+  color: #4caf50;
+  border-color: #81c784;
+  /* background-color: #e8f5e9; */
+}
+
+.tag-red {
+  color: #e57373;
+  border-color: #ef9a9a;
+  /* background-color: #ffebee; */
+}
+
+/* Section title underline */
+.section-title {
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0%;
+  transform: translateX(0%);
+  bottom: -10px;
+  width: 60px;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+/* Optional: Improve spacing consistency */
+.new-articles .card {
+  transition: box-shadow 0.3s ease;
+}
+
+.new-articles .card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 576px) {
+  .new-articles h5 {
+    font-size: 18px;
+  }
+}
