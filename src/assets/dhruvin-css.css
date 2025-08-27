@@ -1,173 +1,56 @@
-/* New Articles Section Styles */
-.new-articles-section {
-  background: #6b89bb;
-  padding: 60px 0;
-}
-
-.new-articles-title {
-  color: #fff;
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 24px;
-  letter-spacing: 1px;
-}
-
-.new-articles-underline {
-  width: 70px;
-  height: 6px;
-  background: #fff;
+/* Tag styling */
+.tag {
+  font-size: 14px;
+  padding: 2px 6px;
   border-radius: 3px;
-  margin-bottom: 40px;
-}
-
-.new-articles-cards {
-  display: flex;
-  gap: 32px;
-  justify-content: flex-start;
-  align-items: stretch;
-}
-
-.new-article-card {
-  background: #fff;
-  border-radius: 14px;
-  box-shadow: 0 2px 12px rgba(23, 43, 77, 0.08);
-  padding: 32px 28px 24px 28px;
-  display: flex;
-  flex-direction: column;
-  min-width: 340px;
-  max-width: 400px;
-  flex: 1 1 0;
-  min-height: 380px;
-  transition: box-shadow 0.2s;
-}
-
-.new-article-card:first-child {
-  min-height: 480px;
-  max-width: 440px;
-  flex: 1.2 1 0;
-}
-
-.new-article-tags {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 18px;
+  border: 1px solid;
 }
 
 .tag-yellow {
-  border: 2px solid #f7e48b;
-  color: #bfa800;
-  background: #fffbe6;
-  border-radius: 4px;
-  padding: 2px 12px;
-  font-size: 17px;
+  color: #c9aa00;
+  border-color: #f5e663;
+  /* background-color: #fffbe6; */
 }
 
 .tag-green {
-  border: 2px solid #8be48b;
-  color: #1a7f1a;
-  background: #eaffea;
-  border-radius: 4px;
-  padding: 2px 12px;
-  font-size: 17px;
+  color: #4caf50;
+  border-color: #81c784;
+  /* background-color: #e8f5e9; */
 }
 
 .tag-red {
-  border: 2px solid #ffb3a7;
-  color: #c94a2e;
-  background: #fff0ed;
-  border-radius: 4px;
-  padding: 2px 12px;
-  font-size: 17px;
+  color: #e57373;
+  border-color: #ef9a9a;
+  /* background-color: #ffebee; */
 }
 
-.new-article-title {
-  color: #22314a;
-  font-size: 25px;
-  font-weight: 500;
-  margin-bottom: 16px;
-  margin-top: 8px;
-}
-
-.new-article-date {
-  color: #7c8ca1;
-  font-size: 18px;
-  margin-top: auto;
-}
-
-@media (max-width: 1200px) {
-  .new-articles-cards {
-    flex-direction: column;
-    gap: 24px;
-    align-items: stretch;
-  }
-  .new-article-card,
-  .new-article-card:first-child {
-    max-width: 100%;
-    min-width: 0;
-  }
-}
-/* ======= hero-section Section ======= */
-/* ===== Hero Section ===== */
-.hero-section {
+/* Section title underline */
+.section-title {
   position: relative;
-  min-height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-    url("/assets/hero-bg.jpg") center/cover no-repeat;
-  text-align: center;
 }
 
-/* Hero Title */
-.hero-title {
-  color: #fff;
-  font-weight: 600;
-  /* font-size: 52px; */
-  font-size: clamp(1.75rem, 5vw, 3.25rem); /* 👈 Responsive font size */
-  line-height: 1.25;
-  margin-bottom: 1.5rem;
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0%;
+  transform: translateX(0%);
+  bottom: -10px;
+  width: 60px;
+  height: 4px;
+  background-color: #ffffff;
 }
 
-/* Search Box */
-.search-box {
-  background: #fff;
-  padding: 1.5rem 2rem;
-  border-radius: 20px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-  width: 100%;
-  max-width: 1168px; /* ✅ add back max-width for better layout */
-  min-height: 200px; /* 👈 slightly reduce for better mobile UX */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Optional: Improve spacing consistency */
+.new-articles .card {
+  transition: box-shadow 0.3s ease;
 }
 
-/* Tablet */
-@media (max-width: 992px) {
-  /* .hero-title {
-    font-size: 42px;
-  } */
-
-  .search-box {
-    padding: 1.25rem 1.5rem;
-    min-height: 190px;
-  }
-}
-@media (max-width: 768px) {
-  /* .hero-title {
-    font-size: 38px;
-  } */
-  .search-box {
-    padding: 1rem 1.25rem;
-    min-height: 180px;
-  }
+.new-articles .card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Mobile */
 @media (max-width: 576px) {
-  .search-box {
-    padding: 1rem;
-    min-height: 120px;
+  .new-articles h5 {
+    font-size: 18px;
   }
 }
