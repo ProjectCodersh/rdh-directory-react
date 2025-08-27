@@ -4,7 +4,7 @@ import horizontalFrame from "/assets/img/frame.png";
 
 function FindPerfectStore() {
   return (
-    <section className="findperfectstore py-5">
+    <section className="findperfectstore pt-5">
       <div className="custom_container">
         <div className="row align-items-center justify-content-between">
           {/* Left Content */}

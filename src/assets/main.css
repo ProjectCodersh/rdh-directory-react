@@ -42,13 +42,14 @@ p {
     font-size: 1.25rem;
   }
   p {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 }
 
 /* Container */
 .custom_container {
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
 }

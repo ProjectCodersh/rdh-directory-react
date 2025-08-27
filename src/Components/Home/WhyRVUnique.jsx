@@ -6,7 +6,7 @@ function WhyRVUnique() {
     <section className="why-unique py-5">
       <div className="custom_container">
         {/* Title */}
-        <div className="text-center mb-5">
+        <div className="text-center mb-3 mb-md-5">
           <h2 className="section-title">Why are we unique</h2>
         </div>
 

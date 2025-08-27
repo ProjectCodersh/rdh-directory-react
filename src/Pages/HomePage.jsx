@@ -3,6 +3,7 @@ import DesignConcierge from "../Components/Home/DesingConsirge";
 import FindPerfectStore from "../Components/Home/FindPerfectStore";
 import HeroSection from "../Components/Home/HeroSection";
 import HowItWorks from "../Components/Home/HowItWorks";
+import HowItWorks_2 from "../Components/Home/HowItWorks_2";
 import WhyRVUnique from "../Components/Home/WhyRVUnique";
 
 export default function HomePage() {
@@ -13,6 +14,7 @@ export default function HomePage() {
       <DesignConcierge />
       <WhyRVUnique />
       <FindPerfectStore />
+      <HowItWorks_2 />
       <CTAsection />
     </>
   );
