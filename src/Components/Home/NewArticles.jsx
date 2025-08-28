@@ -1,5 +1,4 @@
 import React from "react";
-import "../../assets/dhruvin-css.css"; // Custom styles
 
 const articles = [
   {

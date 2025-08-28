@@ -1,7 +1,5 @@
 import React from "react";
 import parse from "html-react-parser"; // npm install html-react-parser
-import "../../assets/dhruvin-css.css";
-import "../../assets/aditya-css.css";
 
 const data = [
   {

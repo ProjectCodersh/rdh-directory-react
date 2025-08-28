@@ -1,5 +1,4 @@
 import React from "react";
-import "../../assets/aditya-css.css";
 import horizontalFrame from "/assets/img/frame.png";
 
 function FindPerfectStore() {

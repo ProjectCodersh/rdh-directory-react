@@ -503,11 +503,11 @@
 }
 
 /* Section title underline */
-.section-title {
+.new-articles .section-title {
   position: relative;
 }
 
-.section-title::after {
+.new-articles .section-title::after {
   content: "";
   position: absolute;
   left: 0%;

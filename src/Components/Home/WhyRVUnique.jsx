@@ -1,5 +1,4 @@
 import React from "react";
-import "../../assets/aditya-css.css"; // custom css
 
 function WhyRVUnique() {
   return (

@@ -1,5 +1,4 @@
 import React from "react";
-import "../../assets/aditya-css.css";
 
 function HeroSection() {
   return (

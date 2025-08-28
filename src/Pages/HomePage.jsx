@@ -20,7 +20,6 @@ export default function HomePage() {
       <NewArticles />
       <Testimonials />
       <CTAsection />
-      {/* checking all working or not */}
     </>
   );
 }
